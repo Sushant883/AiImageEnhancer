@@ -2,7 +2,7 @@
 
 import React from "react";
 
-const ImagePreview = () => {
+const ImagePreview = (props) => {
   return (
     // this is main div
     <div className="mt-8 grid grid-cols-1 md:grid-cols-2 gap-6 w-full max-w-4xl">
@@ -12,7 +12,7 @@ const ImagePreview = () => {
           Original Image
         </h2>
         {/* this is image tag */}
-        <img src="" alt="" className="w-full h-full object-cover" />
+        <img src={props.uploaded} alt="" className="w-full h-full object-cover" />
 
         <div className="flex items-center justify-center h-80 bg-gray-200">
           No Image Selected
