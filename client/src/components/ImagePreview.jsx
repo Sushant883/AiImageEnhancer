@@ -1,6 +1,7 @@
 // this is going in the Home.jsx page as a component
 
 import React from "react";
+import Loading from "./Loading.jsx";
 
 const ImagePreview = (props) => {
   return (
@@ -32,8 +33,12 @@ const ImagePreview = (props) => {
           Enhanced Image
         </h2>
 
-        {props.enhanced ? (
+        {props.enhanced && !props.loading && (
           <img src="" alt="" className="w-full h-full object-cover" />
+        )}
+
+        {props.loading ? (
+          <Loading />
         ) : (
           <div className="flex items-center justify-center h-80 bg-gray-200">
             No Enhanced Image
