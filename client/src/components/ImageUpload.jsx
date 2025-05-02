@@ -7,9 +7,10 @@ const ImageUpload = () => {
     <div className="bg-white shodow-lg rounded-2xl p-6 w-full max-2xl">
       <label
         htmlFor="fileInput"
-        className="block w-full cursor-pointer border-2 border-dashed border-gray-300 rounded-lg p-6"
+        className="block w-full cursor-pointer border-2 border-dashed border-gray-300 rounded-lg p-6 text-center hover:bg-gray-50 hover:border-gray-400 transition duration-200 transition-all"
       >
-        <p>Click and drap to upload your image</p>
+        <input type="file" className="hidden" id="fileInput" />
+        <span className="text-lg font-medium text-gray-700">Click and drap to upload your image</span>
       </label>
     </div>
   );
