@@ -11,12 +11,19 @@ const ImagePreview = (props) => {
         <h2 className="text-xl font-semibold text-center bg-gray-800 text-white py-2">
           Original Image
         </h2>
-        {/* this is image tag */}
-        <img src={props.uploaded} alt="" className="w-full h-full object-cover" />
 
-        <div className="flex items-center justify-center h-80 bg-gray-200">
-          No Image Selected
-        </div>
+        {/* this is image tag */}
+        {props.uploaded ? (
+          <img
+            src={props.uploaded}
+            alt=""
+            className="w-full h-full object-cover"
+          />
+        ) : (
+          <div className="flex items-center justify-center h-80 bg-gray-200">
+            No Image Selected
+          </div>
+        )}
       </div>
 
       {/* this div is show the enhanced image of the original image  */}
@@ -25,11 +32,13 @@ const ImagePreview = (props) => {
           Enhanced Image
         </h2>
 
-        <img src="" alt="" className="w-full h-full object-cover" />
-
-        <div className="flex items-center justify-center h-80 bg-gray-200">
-          No Enhanced Image
-        </div>
+        {props.enhanced ? (
+          <img src="" alt="" className="w-full h-full object-cover" />
+        ) : (
+          <div className="flex items-center justify-center h-80 bg-gray-200">
+            No Enhanced Image
+          </div>
+        )}
       </div>
     </div>
   );
