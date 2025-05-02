@@ -6,13 +6,22 @@ const Home = () => {
   const [uploadImage, setUploadImage] = useState(null);
   const [enhancedImage, setEnhancedImage] = useState(null);
   const [loading, setloading] = useState(false);
+
+
+  // child component function in imageupload.jsx for share the image
+  const UploadImageHandler = (file) => {
+    setUploadImage(URL.createObjectURL(file));
+    setloading(true);
+    // call the api for enhance the image
+    // console.log(URL.createObjectURL(file));
+  };
   return (
     <>
-      <ImageUpload />
-      <ImagePreview 
-      loading={loading}
-      uploaded= {uploadImage}
-      enhanced={enhancedImage}
+      <ImageUpload UploadImageHandler={UploadImageHandler} />
+      <ImagePreview
+        loading={loading}
+        uploaded={uploadImage}
+        enhanced={enhancedImage}
       />
     </>
   );
