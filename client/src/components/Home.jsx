@@ -1,16 +1,21 @@
-import React from 'react'
-import ImageUpload from './ImageUpload.jsx'
-import ImagePreview from './ImagePreview.jsx'
+import React, { useState } from "react";
+import ImageUpload from "./ImageUpload.jsx";
+import ImagePreview from "./ImagePreview.jsx";
 
 const Home = () => {
+  const [uploadImage, setUploadImage] = useState(null);
+  const [enhancedImage, setEnhancedImage] = useState(null);
+  const [loading, setloading] = useState(false);
   return (
-    <div>
+    <>
+      <ImageUpload />
+      <ImagePreview 
+      loading={loading}
+      uploaded= {uploadImage}
+      enhanced={enhancedImage}
+      />
+    </>
+  );
+};
 
-        <ImageUpload />
-        <ImagePreview />
-      <h2>App</h2>
-    </div>
-  )
-}
-
-export default Home
+export default Home;
