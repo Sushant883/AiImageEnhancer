@@ -56,8 +56,14 @@ const fetchEnhancedImage = async (task_id) => {
       },
     }
   );
-  console.log(data);
+  console.log(data.data.image);
   // /api/tasks/visual/scale/{task_id}
 };
 
 //Image Uploaded Successfully , Task ID: eea69369-5389-4b9c-9289-5f4860e737ac
+
+// //
+// image
+// :
+// "https://wxtechhk.oss-cn-hongkong.aliyuncs.com/tasks/output/scale/eea69369-5389-4b9c-9289-5f4860e737ac.jpg?x-oss-credential=LTAI5tGjJnh66c1txANiRBQN/20250503/cn-hongkong/oss/aliyun_v4_request&x-oss-date=20250503T112227Z&x-oss-expires=3600&x-oss-signature=0ef76e28f7edcd512795e9b744641e83f3262f25a192052223c55ef4d7069da3&x-oss-signature-version=OSS4-HMAC-SHA256"
+// image_height
