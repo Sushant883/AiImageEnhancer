@@ -9,11 +9,22 @@ const Home = () => {
 
 
   // child component function in imageupload.jsx for share the image
-  const UploadImageHandler = (file) => {
+  const UploadImageHandler =  async (file) => {
     setUploadImage(URL.createObjectURL(file));
     setloading(true);
     // call the api for enhance the image
     // console.log(URL.createObjectURL(file));
+
+    try{
+      const enhancedURL = await enhancedImageAPI(file);
+      setEnhancedImage(enhancedURL);
+      setloading(false);
+      // code which may produce error
+    } catch(error){
+      console.log(error);
+      alert("Error in enhancing the image")
+      // code to handle the error and shwo message
+    }
   };
   return (
     <>
