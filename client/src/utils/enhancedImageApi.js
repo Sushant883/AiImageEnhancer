@@ -4,11 +4,12 @@ import axios from "axios";
 
 export const enhancedImageAPI = async (file) => {
   try {
-    // const task_id = await uploadImage(file);
-    // console.log("Image Uploaded Successfully , Task ID:", task_id);
+    const task_id = await uploadImage(file);
+    console.log("Image Uploaded Successfully , Task ID:", task_id);
 
     const enhanceImageData = await fetchEnhancedImage(
-      "eea69369-5389-4b9c-9289-5f4860e737ac"
+    //   "eea69369-5389-4b9c-9289-5f4860e737ac"
+    "task_id"
     );
     console.log("Enhanced Image Data:", enhanceImageData);
 
@@ -56,7 +57,11 @@ const fetchEnhancedImage = async (task_id) => {
       },
     }
   );
-  console.log(data.data.image);
+  if(!data?.data?.image){
+    throw new Error("Failed to fetch enhanced image! Image not found.");
+  }
+  return data.data.image;
+//   console.log(data.data.image);
   // /api/tasks/visual/scale/{task_id}
 };
 
