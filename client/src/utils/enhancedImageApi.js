@@ -8,8 +8,8 @@ export const enhancedImageAPI = async (file) => {
     console.log("Image Uploaded Successfully , Task ID:", task_id);
 
     const enhanceImageData = await fetchEnhancedImage(
-    //   "eea69369-5389-4b9c-9289-5f4860e737ac"
-    "task_id"
+      //   "eea69369-5389-4b9c-9289-5f4860e737ac"
+      "task_id"
     );
     console.log("Enhanced Image Data:", enhanceImageData);
 
@@ -57,12 +57,24 @@ const fetchEnhancedImage = async (task_id) => {
       },
     }
   );
-  if(!data?.data?){
+  if (!data?.data) {
     throw new Error("Failed to fetch enhanced image! Image not found.");
   }
   return data.data;
-//   console.log(data.data.image);
+  //   console.log(data.data.image);
   // /api/tasks/visual/scale/{task_id}
+};
+
+const PollForEnhancedImage = async (taskId) => {
+  const result = await fetchEnhancedImage(taskId);
+
+  if (result.status === 4) {
+    console.log("Processing...");
+
+    if (retries >= 20) {
+      throw new Error("Max retrires reached. Please try again later");
+    }
+  }
 };
 
 //Image Uploaded Successfully , Task ID: eea69369-5389-4b9c-9289-5f4860e737ac
