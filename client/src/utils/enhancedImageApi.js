@@ -7,9 +7,13 @@ export const enhancedImageAPI = async (file) => {
     const task_id = await uploadImage(file);
     console.log("Image Uploaded Successfully , Task ID:", task_id);
 
-    const enhanceImageData = await fetchEnhancedImage(
+    // const enhanceImageData = await fetchEnhancedImage(
+    //   //   "eea69369-5389-4b9c-9289-5f4860e737ac"
+    //   task_id
+    // );
+    const enhanceImageData = await PollForEnhancedImage(
       //   "eea69369-5389-4b9c-9289-5f4860e737ac"
-      "task_id"
+      task_id
     );
     console.log("Enhanced Image Data:", enhanceImageData);
 
@@ -65,10 +69,10 @@ const fetchEnhancedImage = async (task_id) => {
   // /api/tasks/visual/scale/{task_id}
 };
 
-const PollForEnhancedImage = async (taskId) => {
+const PollForEnhancedImage = async (taskId , retries = 0) => {
   const result = await fetchEnhancedImage(taskId);
 
-  if (result.status === 4) {
+  if (result.state === 4) {
     console.log("Processing...");
 
     if (retries >= 20) {
@@ -77,7 +81,13 @@ const PollForEnhancedImage = async (taskId) => {
 
     // wait for 2 second
     await new Promise((resolve) => setTimeout(resolve, 2000));
+ 
+    return PollForEnhancedImage(taskId, retries + 1);
   }
+
+
+  console.log("Enhanced Image URL:", result);
+  return result;
 };
 
 //Image Uploaded Successfully , Task ID: eea69369-5389-4b9c-9289-5f4860e737ac
