@@ -13,8 +13,8 @@ export const enhancedImageAPI = async (file) => {
     );
     console.log("Enhanced Image Data:", enhanceImageData);
 
-    console.log(enhancedImageData);
-    return enhancedImageData;
+    // console.log(enhancedImageData);
+    // return enhancedImageData;
   } catch (error) {
     console.log("Error enhancing image:", error.message);
   }
@@ -57,10 +57,10 @@ const fetchEnhancedImage = async (task_id) => {
       },
     }
   );
-  if(!data?.data?.image){
+  if(!data?.data?){
     throw new Error("Failed to fetch enhanced image! Image not found.");
   }
-  return data.data.image;
+  return data.data;
 //   console.log(data.data.image);
   // /api/tasks/visual/scale/{task_id}
 };
