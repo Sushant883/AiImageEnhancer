@@ -18,7 +18,7 @@ export const enhancedImageAPI = async (file) => {
     console.log("Enhanced Image Data:", enhanceImageData);
 
     // console.log(enhancedImageData);
-    // return enhancedImageData;
+    return enhancedImageData;
   } catch (error) {
     console.log("Error enhancing image:", error.message);
   }

@@ -18,7 +18,7 @@ const Home = () => {
 
     try{
       const enhancedURL = await enhancedImageAPI(file);
-      setEnhancedImage(enhancedURL);
+      setEnhancedImage(enhancedURL.image);
       setloading(false);
       // code which may produce error
     } catch(error){
