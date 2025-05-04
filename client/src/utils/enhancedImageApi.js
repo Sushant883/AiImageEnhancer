@@ -74,6 +74,9 @@ const PollForEnhancedImage = async (taskId) => {
     if (retries >= 20) {
       throw new Error("Max retrires reached. Please try again later");
     }
+
+    // wait for 2 second
+    await new Promise((resolve) => setTimeout(resolve, 2000));
   }
 };
 
