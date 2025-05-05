@@ -1,5 +1,6 @@
 const API_KEY = "wxcqlhypu3mp9bljf";
 const BASE_URL = "https://techhk.aoscdn.com/";
+const MAXIMUM_RETRIES = 20; // Maximum number of retries for polling
 import axios from "axios";
 
 export const enhancedImageAPI = async (file) => {
@@ -73,7 +74,7 @@ const PollForEnhancedImage = async (taskId , retries = 0) => {
   const result = await fetchEnhancedImage(taskId);
 
   if (result.state === 4) {
-    console.log("Processing...");
+    console.log(`Processing ... (${retries}/${MAXIMUM_RETRIES})`);
 
     if (retries >= 20) {
       throw new Error("Max retrires reached. Please try again later");
