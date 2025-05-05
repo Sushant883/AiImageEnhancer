@@ -18,7 +18,8 @@ const Home = () => {
 
     try{
       const enhancedURL = await enhancedImageAPI(file);
-      setEnhancedImage(enhancedURL.image);
+      // setEnhancedImage(enhancedURL.image);
+      setEnhancedImage(enhancedURL);
       setloading(false);
       // code which may produce error
     } catch(error){
@@ -27,6 +28,7 @@ const Home = () => {
       // code to handle the error and shwo message
     }
   };
+  console.log(enhancedImage); 
   return (
     <>
       <ImageUpload UploadImageHandler={UploadImageHandler} />
