@@ -28,14 +28,14 @@ const Home = () => {
       // code to handle the error and shwo message
     }
   };
-  console.log(enhancedImage); 
+  // console.log(enhancedImage); 
   return (
     <>
       <ImageUpload UploadImageHandler={UploadImageHandler} />
       <ImagePreview
         loading={loading}
         uploaded={uploadImage}
-        enhanced={enhancedImage}
+        enhanced={enhancedImage?.image}
       />
     </>
   );

@@ -11,14 +11,14 @@ export const enhancedImageAPI = async (file) => {
     //   //   "eea69369-5389-4b9c-9289-5f4860e737ac"
     //   task_id
     // );
-    const enhanceImageData = await PollForEnhancedImage(
+    const enhancedImageData = await PollForEnhancedImage(
       //   "eea69369-5389-4b9c-9289-5f4860e737ac"
       task_id
     );
-    console.log("Enhanced Image Data:", enhanceImageData);
+    console.log("Enhanced Image Data:", enhancedImageData);
 
     // console.log(enhancedImageData);
-    return enhanceImageData;
+    return enhancedImageData;
   } catch (error) {
     console.log("Error enhancing image:", error.message);
   }
