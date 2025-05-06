@@ -6,18 +6,22 @@ const Feature = () => {
     <div
       style={{
         width: "100%",
-        padding: "40px",
+        // padding: "40px",
         height: "100vh",
-        border: "10px solid red",
+        // border: "10px solid red",
         textAlign: "center",
         backgroundColor: "#f5f5f5",
         display: "flex",
         flexDirection: "column",
-        justifyContent: "space-evenly",
+        // justifyContent: "space-evenly",
         // alignItems: "center",
       }}
     >
-      <h2 style={{ fontSize: "28px", marginBottom: "20px" }}>Key Features</h2>
+      <h2 style={{ fontSize: "28px",
+        border: "1px solid gray",
+        marginTop:"10px",
+        marginBottom:"100px",
+       }}>Key Features</h2>
 
       <div
         style={{
@@ -26,14 +30,17 @@ const Feature = () => {
           // flexDirection: "column",
           justifyContent: "center",
           // alignItems: "center",
-          flexWrap: "wrap",
+          // flexWrap: "wrap",
+          marginBottom: "100px",
           gap: "20px",
+          width:"100%",
           // maxWidth: "600px",
-          // marginBotton: "100px",
         }}
       >
         <div
           style={{
+            border: "1px solid gray",
+            cursor: "pointer",
             padding: "15px",
             backgroundColor: "white",
             borderRadius: "8px",
@@ -45,6 +52,8 @@ const Feature = () => {
 
         <div
           style={{
+            border: "1px solid gray",
+            cursor: "pointer",
             padding: "15px",
             backgroundColor: "white",
             borderRadius: "8px",
@@ -56,6 +65,8 @@ const Feature = () => {
 
         <div
           style={{
+            cursor: "pointer",
+            border: "1px solid gray",
             padding: "15px",
             backgroundColor: "white",
             borderRadius: "8px",
@@ -66,7 +77,9 @@ const Feature = () => {
         </div>
         <div
           style={{
+            cursor: "pointer",
             padding: "15px",
+            border: "1px solid gray",
             backgroundColor: "white",
             borderRadius: "8px",
           }}
