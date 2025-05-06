@@ -7,7 +7,7 @@ const Feature = () => {
       style={{
         width: "100%",
         // padding: "40px",
-        height: "100vh",
+        // height: "100vh",
         // border: "10px solid red",
         textAlign: "center",
         backgroundColor: "#f5f5f5",
@@ -26,7 +26,7 @@ const Feature = () => {
       <div
         style={{
           display: "flex",
-          border: "3px solid red",
+          // border: "3px solid red",
           // flexDirection: "column",
           justifyContent: "center",
           // alignItems: "center",
@@ -90,7 +90,7 @@ const Feature = () => {
       </div>
 
       <div className="bg-gray-900 text-white py-8">
-        <div className="max-w-6xl mx-auto px-4 text-center">
+        <div className="max-w-6xl mx-auto px-4 text-center ">
           <p className="text-lg font-medium mb-4">
             "Empower your images with the power of AI. Enhance, restore, and
             transform like never before."

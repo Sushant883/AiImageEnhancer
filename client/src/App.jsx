@@ -5,9 +5,7 @@ import Features from "./pages/Features.jsx";
 import Pricing from "./pages/Pricing.jsx";
 import Contact from "./pages/Contact.jsx";
 import Footer from "./components/Footer.jsx";
-
 import Navbar from "./components/Navbar.jsx";
-
 import Home from "./components/Home.jsx";
 // import "./App.css";
 
