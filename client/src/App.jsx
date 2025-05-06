@@ -4,6 +4,7 @@ import { Routes, Route } from "react-router-dom";
 import Features from "./pages/Features.jsx";
 import Pricing from "./pages/Pricing.jsx";
 import Contact from "./pages/Contact.jsx";
+import Footer from "./components/Footer.jsx";
 
 import Navbar from "./components/Navbar.jsx";
 
@@ -29,7 +30,7 @@ const App = () => {
       {/* <Home /> */}
 
      
-      
+      <Footer />
     </div>
   );
 };

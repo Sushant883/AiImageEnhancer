@@ -1,42 +1,79 @@
+import { AlignStartHorizontal } from "lucide-react";
 import React from "react";
 
-const features = [
-  {
-    title: "AI-Powered Enhancement",
-    desc: "Automatically improve image quality using deep learning.",
-  },
-  {
-    title: "Noise Reduction",
-    desc: "Eliminate grain and blur while retaining natural detail.",
-  },
-  {
-    title: "Color Correction",
-    desc: "Fix brightness, contrast, and saturation in one click.",
-  },
-  {
-    title: "Batch Processing",
-    desc: "Enhance multiple images simultaneously with blazing speed.",
-  },
-];
-
-const Features = () => {
+const Feature = () => {
   return (
-    <div className="max-w-6xl mx-auto px-4 py-16 text-gray-900 dark:text-white border border-red-300 min-h-screen flex flex-col justify-between">
-      <h1 className="text-4xl font-bold mb-12 text-center text-black">
-        Features
-      </h1>
-      <div className="grid gap-8 md:grid-cols-2
-      border border-red-400
-      ">
-        {features.map((f, index) => (
-          <div
-            key={index}
-            className="p-6 border rounded-xl bg-white dark:bg-[#1a1a1a] shadow-md transition hover:shadow-lg"
-          >
-            <h2 className="text-2xl font-semibold mb-2">{f.title}</h2>
-            <p className="text-gray-600 dark:text-gray-400">{f.desc}</p>
-          </div>
-        ))}
+    <div
+      style={{
+        width: "100%",
+        padding: "40px",
+        height: "100vh",
+        border: "10px solid red",
+        textAlign: "center",
+        backgroundColor: "#f5f5f5",
+        display: "flex",
+        flexDirection: "column",
+        justifyContent: "space-evenly",
+        // alignItems: "center",
+      }}
+    >
+      <h2 style={{ fontSize: "28px", marginBottom: "20px" }}>Key Features</h2>
+
+      <div
+        style={{
+          display: "flex",
+          border: "3px solid red",
+          // flexDirection: "column",
+          justifyContent: "center",
+          // alignItems: "center",
+          flexWrap: "wrap",
+          gap: "20px",
+          // maxWidth: "600px",
+          // marginBotton: "100px",
+        }}
+      >
+        <div
+          style={{
+            padding: "15px",
+            backgroundColor: "white",
+            borderRadius: "8px",
+          }}
+        >
+          <h3>AI Image Enhancement</h3>
+          <p>Improve image quality using artificial intelligence.</p>
+        </div>
+
+        <div
+          style={{
+            padding: "15px",
+            backgroundColor: "white",
+            borderRadius: "8px",
+          }}
+        >
+          <h3>One-Click Fix</h3>
+          <p>Enhance brightness, contrast, and sharpness instantly.</p>
+        </div>
+
+        <div
+          style={{
+            padding: "15px",
+            backgroundColor: "white",
+            borderRadius: "8px",
+          }}
+        >
+          <h3>Free to Use</h3>
+          <p>Upload and enhance images without any cost.</p>
+        </div>
+        <div
+          style={{
+            padding: "15px",
+            backgroundColor: "white",
+            borderRadius: "8px",
+          }}
+        >
+          <h3>Free to Use</h3>
+          <p>Upload and enhance images without any cost.</p>
+        </div>
       </div>
 
       <div className="bg-gray-900 text-white py-8">
@@ -51,11 +88,8 @@ const Features = () => {
           </p>
         </div>
       </div>
-
-
-
     </div>
   );
 };
 
-export default Features;
+export default Feature;
