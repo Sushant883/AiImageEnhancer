@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Link, NavLink } from 'react-router-dom';
 import { Menu, X, Sun, Moon } from 'lucide-react';
+// import Features from './Features.jsx';
 
 
 const Navbar = () => {
