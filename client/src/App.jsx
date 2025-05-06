@@ -1,4 +1,6 @@
 import React from "react";
+import Navbar from "./components/Navbar.jsx";
+
 // import { useState } from 'react'
 // import reactLogo from './assets/react.svg'
 // import viteLogo from '/vite.svg'
@@ -10,8 +12,10 @@ const App = ()=> {
   // const [count, setCount] = useState(0)
 
   return (
+   
     <div className="flex flex-col items-center justify-center
-    min-h-screen bg-gray-100 py-8 px-4">
+    min-h-screen bg-gray-100 py-8 px-4 ">
+       <Navbar />
 
       <div className="text-center mb-8">
         <h1 className="text-5xl font-bold text-gray-800 mb-2">AI Image Enhancer

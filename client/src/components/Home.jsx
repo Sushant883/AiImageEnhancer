@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import ImageUpload from "./ImageUpload.jsx";
 import ImagePreview from "./ImagePreview.jsx";
 import { enhancedImageAPI } from "../utils/enhancedImageApi.js";
+import { Link, NavLink } from 'react-router-dom'; 
 
 const Home = () => {
   const [uploadImage, setUploadImage] = useState(null);
@@ -29,8 +30,17 @@ const Home = () => {
     }
   };
   // console.log(enhancedImage); 
+
+  const navLinks = [
+    { name: 'Home', path: '/' },
+    { name: 'Features', path: '/Features' },
+    { name: 'Pricing', path: '/Pricing' },
+    { name: 'Contact', path: '/Contact' },
+  ];
   return (
     <>
+
+
       <ImageUpload UploadImageHandler={UploadImageHandler} />
       <ImagePreview
         loading={loading}
