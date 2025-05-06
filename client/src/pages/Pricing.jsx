@@ -21,7 +21,7 @@ const plans = [
 const Pricing = () => {
   return (
     <div className="max-w-6xl mx-auto px-4 py-16 text-gray-900 dark:text-white">
-      <h1 className="text-4xl font-bold mb-12 text-center">Pricing Plans</h1>
+      <h1 className="text-4xl font-bold mb-12 text-center text-black">Pricing Plans</h1>
       <div className="grid gap-8 sm:grid-cols-1 md:grid-cols-3">
         {plans.map((plan, index) => (
           <div key={index} className="border rounded-2xl p-6 bg-white dark:bg-[#1a1a1a] shadow-lg hover:scale-105 transition">

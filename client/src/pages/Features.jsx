@@ -10,7 +10,7 @@ const features = [
 const Features = () => {
   return (
     <div className="max-w-6xl mx-auto px-4 py-16 text-gray-900 dark:text-white">
-      <h1 className="text-4xl font-bold mb-12 text-center">Features</h1>
+      <h1 className="text-4xl font-bold mb-12 text-center text-black">Features</h1>
       <div className="grid gap-8 md:grid-cols-2">
         {features.map((f, index) => (
           <div key={index} className="p-6 border rounded-xl bg-white dark:bg-[#1a1a1a] shadow-md transition hover:shadow-lg">

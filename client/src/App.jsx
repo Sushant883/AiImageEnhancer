@@ -14,8 +14,8 @@ const App = () => {
   // const [count, setCount] = useState(0)
   return (
     <div
-      className="flex flex-col items-center justify-center
-    min-h-screen bg-gray-100 py-8 px-4 "
+      className="flex flex-col items-center
+    min-h-screen bg-gray-100  "
     >
       <Navbar />
       <Routes>
