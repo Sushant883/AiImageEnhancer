@@ -18,7 +18,7 @@ const Feature = () => {
       }}
     >
       <h2 style={{ fontSize: "28px",
-        border: "1px solid gray",
+        // border: "1px solid gray",
         marginTop:"10px",
         marginBottom:"100px",
        }}>Key Features</h2>
