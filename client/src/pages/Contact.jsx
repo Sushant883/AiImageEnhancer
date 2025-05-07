@@ -334,7 +334,7 @@ const Contact = () => {
       {/* )} */}
 
       {isLoading && (
-  <div className="fixed bottom-20 flex items-center gap-3 text-blue-600 font-semibold z-50">
+  <div className="fixed dark:text-blue-400 ... bottom-20 flex items-center gap-3 text-blue-600 font-semibold z-50">
     {/* Advanced Spinner */}
     <div className="relative w-6 h-6">
       <div className="absolute inset-0 rounded-full border-2 border-blue-500 border-t-transparent animate-spin"></div>
