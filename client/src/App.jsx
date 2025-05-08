@@ -7,6 +7,7 @@ import Contact from "./pages/Contact.jsx";
 import Footer from "./components/Footer.jsx";
 import Navbar from "./components/Navbar.jsx";
 import Home from "./components/Home.jsx";
+import ApiDocs from "./FooterContent/ApiDocumentatino.jsx";
 // import "./App.css";
 
 const App = () => {
@@ -22,12 +23,11 @@ const App = () => {
         <Route path="/Features" element={<Features />} />
         <Route path="/Pricing" element={<Pricing />} />
         <Route path="/Contact" element={<Contact />} />
+        <Route path="/ApiDocs" element={<ApiDocs />} />
       </Routes>
-
 
       {/* <Home /> */}
 
-     
       <Footer />
     </div>
   );
