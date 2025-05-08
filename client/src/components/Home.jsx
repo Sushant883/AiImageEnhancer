@@ -41,12 +41,15 @@ const Home = () => {
         </p>
       </div>
 
-      <ImageUpload UploadImageHandler={UploadImageHandler} />
-      <ImagePreview
-        loading={loading}
-        uploaded={uploadImage}
-        enhanced={enhancedImage?.image}
-      />
+
+
+     
+        <ImageUpload UploadImageHandler={UploadImageHandler} />
+        <ImagePreview
+          loading={loading}
+          uploaded={uploadImage}
+          enhanced={enhancedImage?.image}
+        />
 
       <div className="text-lg text-gray-500 mt-6">
         This is the platform which is give 4k quality image
