@@ -5,15 +5,20 @@ function ApiDocs() {
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
 
   // Effect to update the windowWidth on resize
-  useEffect(() => {
-    const handleResize = () => setWindowWidth(window.innerWidth);
-    window.addEventListener("resize", handleResize);
-    return () => window.removeEventListener("resize", handleResize);
-  }, []);
+  // useEffect(() => {
+  //   const handleResize = () => setWindowWidth(window.innerWidth);
+  //   window.addEventListener("resize", handleResize);
+  //   return () => window.removeEventListener("resize", handleResize);
+  // }, []);
 
   // Responsive style logic based on screen width
   const containerStyle = {
     backgroundColor: "#f7fafc",
+    // display: "flex",
+    // flexDirection: "column",
+    // alignItems: "center",
+    // justifyContent: "center",
+    // flexWrap: "wrap",
     padding: windowWidth <= 768 ? "16px" : "24px", // Adjust padding on smaller screens
   };
 
@@ -26,9 +31,10 @@ function ApiDocs() {
   };
 
   const rowStyle = {
-    display: "flex",
-    flexWrap: "wrap",
     gap: "16px",
+    display: "flex",
+    // flexWrap: "wrap",
+    border: "2px solid red",
     justifyContent: "space-between",
   };
 
@@ -42,12 +48,12 @@ function ApiDocs() {
   };
 
   const preStyle = {
+    overflowX: "auto",
     backgroundColor: "#2d3748",
     color: "#68d391",
     padding: "12px",
     borderRadius: "8px",
     fontSize: windowWidth <= 768 ? "12px" : "14px", // Adjust font size inside pre tags
-    overflowX: "auto",
   };
 
   return (

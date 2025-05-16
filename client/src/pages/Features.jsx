@@ -30,7 +30,7 @@ const Feature = () => {
           // flexDirection: "column",
           justifyContent: "center",
           // alignItems: "center",
-          // flexWrap: "wrap",
+          flexWrap: "wrap",
           marginBottom: "100px",
           gap: "20px",
           width:"100%",
@@ -42,6 +42,7 @@ const Feature = () => {
             border: "1px solid gray",
             cursor: "pointer",
             padding: "15px",
+            width: "300px",
             backgroundColor: "white",
             borderRadius: "8px",
           }}
@@ -55,6 +56,7 @@ const Feature = () => {
             border: "1px solid gray",
             cursor: "pointer",
             padding: "15px",
+            width: "300px",
             backgroundColor: "white",
             borderRadius: "8px",
           }}
@@ -68,6 +70,7 @@ const Feature = () => {
             cursor: "pointer",
             border: "1px solid gray",
             padding: "15px",
+            width: "300px",
             backgroundColor: "white",
             borderRadius: "8px",
           }}
@@ -79,6 +82,7 @@ const Feature = () => {
           style={{
             cursor: "pointer",
             padding: "15px",
+            width: "300px",
             border: "1px solid gray",
             backgroundColor: "white",
             borderRadius: "8px",
