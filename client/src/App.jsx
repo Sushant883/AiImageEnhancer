@@ -9,6 +9,7 @@ import Navbar from "./components/Navbar.jsx";
 import Home from "./components/Home.jsx";
 import ApiDocs from "./FooterContent/ApiDocumentatino.jsx";
 import BlogPage from "./FooterContent/BlogPage.jsx";
+import HelpCenter from "./FooterContent/HelpCenter.jsx";
 // import "./App.css";
 
 const App = () => {
@@ -26,6 +27,7 @@ const App = () => {
         <Route path="/Contact" element={<Contact />} />
         <Route path="/ApiDocs" element={<ApiDocs />} />
         <Route path="/BlogPage" element={<BlogPage />} />
+        <Route path="/HelpCenter" element={<HelpCenter />} />
       </Routes>
 
       {/* <Home /> */}

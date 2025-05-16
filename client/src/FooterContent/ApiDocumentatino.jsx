@@ -139,7 +139,7 @@ function ApiDocs() {
           gap: "16px",
           // height: "auto",
           flexWrap: width <= 768 ? "wrap" : "nowrap",
-          border: "2px solid red",
+          // border: "2px solid red",
           justifyContent: "space-between",
           marginTop: "20px",
         }}
