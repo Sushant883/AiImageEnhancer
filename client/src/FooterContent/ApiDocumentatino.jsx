@@ -116,6 +116,7 @@ function ApiDocs() {
         style={{
           display: "flex",
           gap: "16px",
+          border: "2px solid red",
           flexWrap: "wrap",
           justifyContent: "space-between",
           marginTop: "20px",
@@ -126,15 +127,25 @@ function ApiDocs() {
           style={{
             background: "#fff",
             padding: "16px",
+            display: "flex",
+            flexDirection: "column",
+
             borderRadius: "8px",
+            // width: "30%",
             boxShadow: "0 2px 4px rgba(0,0,0,0.1)",
-            // flex: 1,
+            flex: 1,
           }}
         >
           <h2>GET /api/users</h2>
           <p>Fetch all registered users.</p>
           <pre
-            style={{ background: "#eee", padding: "8px", borderRadius: "4px" }}
+            style={{
+              background: "#eee",
+              padding: "8px",
+              whiteSpace: "pre-wrap",
+              wordBreak: "break-word",
+              borderRadius: "4px",
+            }}
           >
             curl -X GET https://yourdomain.com/api/users
           </pre>
@@ -145,9 +156,12 @@ function ApiDocs() {
           style={{
             background: "#fff",
             padding: "16px",
+            display: "flex",
+            flexDirection: "column",
             borderRadius: "8px",
+            // width: "30%",
             boxShadow: "0 2px 4px rgba(0,0,0,0.1)",
-            // flex: 1,
+            flex: 1,
           }}
         >
           <h2>POST /api/login</h2>
@@ -173,14 +187,23 @@ function ApiDocs() {
             background: "#fff",
             padding: "16px",
             borderRadius: "8px",
+            display: "flex",
+            flexDirection: "column",
+            // width: "30%",
             boxShadow: "0 2px 4px rgba(0,0,0,0.1)",
-            // flex: 1,
+            flex: 1,
           }}
         >
           <h2>GET /api/products</h2>
           <p>Fetch all available products.</p>
           <pre
-            style={{ background: "#eee", padding: "8px", borderRadius: "4px" }}
+            style={{
+              background: "#eee",
+              padding: "8px",
+              whiteSpace: "pre-wrap",
+              wordBreak: "break-word",
+              borderRadius: "4px",
+            }}
           >
             curl -X GET https://yourdomain.com/api/products
           </pre>
