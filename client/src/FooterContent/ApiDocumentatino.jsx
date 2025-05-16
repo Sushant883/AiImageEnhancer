@@ -103,11 +103,32 @@
 // export default ApiDocs;
 
 import React from "react";
+import { useState, useEffect } from "react";
 
 function ApiDocs() {
+  // Step 1: width state define karo
+  const [width, setWidth] = useState(window.innerWidth);
+
+  // Step 2: resize event lagao aur width update karo
+  useEffect(() => {
+    const handleResize = () => setWidth(window.innerWidth);
+    window.addEventListener("resize", handleResize);
+
+    // Cleanup
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
   return (
     <div style={{ background: "#f7fafc", padding: "20px" }}>
-      <h1 style={{ color: "#3182ce", textAlign: "center" }}>
+      <h1
+        style={{
+          color: "#3182ce",
+          textAlign: "center",
+          fontSize: "24px",
+          fontWeight: "bold",
+          marginBottom: "20px",
+        }}
+      >
         📘 API Documentation
       </h1>
 
@@ -116,8 +137,9 @@ function ApiDocs() {
         style={{
           display: "flex",
           gap: "16px",
+          // height: "auto",
+          flexWrap: width <= 768 ? "wrap" : "nowrap",
           border: "2px solid red",
-          flexWrap: "wrap",
           justifyContent: "space-between",
           marginTop: "20px",
         }}
@@ -129,11 +151,12 @@ function ApiDocs() {
             padding: "16px",
             display: "flex",
             flexDirection: "column",
-
+            // minWidth:"30%",
             borderRadius: "8px",
             // width: "30%",
             boxShadow: "0 2px 4px rgba(0,0,0,0.1)",
-            flex: 1,
+            flex: "1 1 30%",
+            minWidth: "300px", // Minimum width for smaller screens
           }}
         >
           <h2>GET /api/users</h2>
@@ -159,9 +182,11 @@ function ApiDocs() {
             display: "flex",
             flexDirection: "column",
             borderRadius: "8px",
+            // minWidth:"30%",
             // width: "30%",
             boxShadow: "0 2px 4px rgba(0,0,0,0.1)",
-            flex: 1,
+            flex: "1 1 30%",
+            minWidth: "300px",
           }}
         >
           <h2>POST /api/login</h2>
@@ -189,9 +214,11 @@ function ApiDocs() {
             borderRadius: "8px",
             display: "flex",
             flexDirection: "column",
+            // minWidth:"450px",
             // width: "30%",
             boxShadow: "0 2px 4px rgba(0,0,0,0.1)",
-            flex: 1,
+            flex: "1 1 30%", 
+            minWidth: "300px",
           }}
         >
           <h2>GET /api/products</h2>
