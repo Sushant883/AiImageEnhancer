@@ -31,7 +31,7 @@ const Home = () => {
 
   return (
     <>
-      <div className="text-center mb-8">
+      <div className="text-center mb-8 mt-5 pr-2 pl-2">
         <h1 className="text-5xl font-bold text-gray-800 mb-2">
           AI Image Enhancer{" "}
         </h1>
