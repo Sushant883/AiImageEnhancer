@@ -46,7 +46,7 @@ const Footer = () => {
         {/* Resources */}
         <div>
           <h3 className="text-lg font-semibold mb-3">Resources</h3>
-          <ul className="space-y-2">
+          <div className="space-y-2 flex flex-col">
             <Link to="ApiDocs" className="hover:text-blue-500">
               API Docs
             </Link>
@@ -61,7 +61,7 @@ const Footer = () => {
             <Link to="Community" className="hover:text-blue-500">
               Community
             </Link>
-          </ul>
+          </div>
         </div>
 
         {/* Social & Contact */}
