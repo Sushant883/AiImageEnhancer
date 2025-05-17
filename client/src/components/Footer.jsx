@@ -1,15 +1,16 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
-import { Facebook, Twitter, Instagram, Github } from 'lucide-react';
+import React from "react";
+import { Link } from "react-router-dom";
+import { Facebook, Twitter, Instagram, Github } from "lucide-react";
 
 const Footer = () => {
   return (
     <footer className="bg-gray-100 dark:bg-gray-900 text-gray-700 dark:text-gray-300 pt-12 pb-8 px-6 mt-12 dark:border-gray-700 w-full">
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-8">
-
         {/* Brand Info */}
         <div>
-          <h2 className="text-2xl font-bold text-blue-600 dark:text-white mb-3">AIImageEnhancer</h2>
+          <h2 className="text-2xl font-bold text-blue-600 dark:text-white mb-3">
+            AIImageEnhancer
+          </h2>
           <p className="text-sm">
             Enhance your images to HD with AI power. Fast, free & effective.
           </p>
@@ -19,10 +20,26 @@ const Footer = () => {
         <div>
           <h3 className="text-lg font-semibold mb-3">Quick Links</h3>
           <ul className="space-y-2">
-            <li><Link to="/" className="hover:text-blue-500">Home</Link></li>
-            <li><Link to="/Features" className="hover:text-blue-500">Features</Link></li>
-            <li><Link to="/Pricing" className="hover:text-blue-500">Pricing</Link></li>
-            <li><Link to="/Contact" className="hover:text-blue-500">Contact</Link></li>
+            <li>
+              <Link to="/" className="hover:text-blue-500">
+                Home
+              </Link>
+            </li>
+            <li>
+              <Link to="/Features" className="hover:text-blue-500">
+                Features
+              </Link>
+            </li>
+            <li>
+              <Link to="/Pricing" className="hover:text-blue-500">
+                Pricing
+              </Link>
+            </li>
+            <li>
+              <Link to="/Contact" className="hover:text-blue-500">
+                Contact
+              </Link>
+            </li>
           </ul>
         </div>
 
@@ -30,11 +47,20 @@ const Footer = () => {
         <div>
           <h3 className="text-lg font-semibold mb-3">Resources</h3>
           <ul className="space-y-2">
-            <Link to="ApiDocs" className="hover:text-blue-500">API Docs</Link>
-            {/* <li><a href="#" className="hover:text-blue-500">API Docs</a></li> */}
-            <li><a href="BlogPage" className="hover:text-blue-500">Blog</a></li>
-            <li><a href="HelpCenter" className="hover:text-blue-500">Help Center</a></li>
-            <li><a href="Community" className="hover:text-blue-500">Community</a></li>
+            <Link to="ApiDocs" className="hover:text-blue-500">
+              API Docs
+            </Link>
+
+            <Link to="BlogPage" className="hover:text-blue-500">
+              Blog
+            </Link>
+
+            <Link to="HelpCenter" className="hover:text-blue-500">
+              Help Center
+            </Link>
+            <Link to="Community" className="hover:text-blue-500">
+              Community
+            </Link>
           </ul>
         </div>
 
@@ -42,10 +68,18 @@ const Footer = () => {
         <div>
           <h3 className="text-lg font-semibold mb-3">Connect</h3>
           <div className="flex space-x-4 mb-4">
-            <a href="#" className="hover:text-blue-500"><Facebook size={20} /></a>
-            <a href="#" className="hover:text-blue-500"><Twitter size={20} /></a>
-            <a href="#" className="hover:text-blue-500"><Instagram size={20} /></a>
-            <a href="#" className="hover:text-blue-500"><Github size={20} /></a>
+            <a href="#" className="hover:text-blue-500">
+              <Facebook size={20} />
+            </a>
+            <a href="#" className="hover:text-blue-500">
+              <Twitter size={20} />
+            </a>
+            <a href="#" className="hover:text-blue-500">
+              <Instagram size={20} />
+            </a>
+            <a href="#" className="hover:text-blue-500">
+              <Github size={20} />
+            </a>
           </div>
           <p className="text-sm">support@aiimageenhancer.com</p>
         </div>
