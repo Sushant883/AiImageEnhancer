@@ -47,18 +47,18 @@ const Footer = () => {
         <div>
           <h3 className="text-lg font-semibold mb-3">Resources</h3>
           <div className="space-y-2 flex flex-col">
-            <Link to="ApiDocs" className="hover:text-blue-500">
+            <Link to="/ApiDocs" className="hover:text-blue-500">
               API Docs
             </Link>
 
-            <Link to="BlogPage" className="hover:text-blue-500">
+            <Link to="/BlogPage" className="hover:text-blue-500">
               Blog
             </Link>
 
-            <Link to="HelpCenter" className="hover:text-blue-500">
+            <Link to="/HelpCenter" className="hover:text-blue-500">
               Help Center
             </Link>
-            <Link to="Community" className="hover:text-blue-500">
+            <Link to="/Community" className="hover:text-blue-500">
               Community
             </Link>
           </div>
