@@ -6,9 +6,9 @@ import Loading from "./Loading.jsx";
 const ImagePreview = (props) => {
   return (
     // this is main div
-    <div className="mt-8 grid grid-cols-1 md:grid-cols-2 gap-6 w-full max-w-4xl">
-      {/* this div is store the original image or local uplaoded image? */}
-      <div className="bg-white shadow-lg rounded-xl overflow-hidden">
+    <div className="mt-8 grid grid-cols-1 md:grid-cols-2 gap-6 w-full max-w-2xl">
+      {/* this di v is store the original image or local uplaoded image? */}
+      <div className="bg-white shadow-lg rounded-xl overflow-hidden ">
         <h2 className="text-xl font-semibold text-center bg-gray-800 text-white py-2">
           Original Image
         </h2>

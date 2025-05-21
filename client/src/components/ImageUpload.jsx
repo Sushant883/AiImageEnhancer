@@ -23,7 +23,7 @@ const ImageUpload = (props) => {
           onChange={ShowImageHandler}
         />
         <span className="text-lg font-medium text-gray-700">
-          Click and drap to upload your image
+          Click and drag to upload your image
         </span>
       </label>
     </div>
