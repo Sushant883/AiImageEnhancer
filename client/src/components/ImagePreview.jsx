@@ -21,7 +21,7 @@ const ImagePreview = (props) => {
             className="w-full h-full object-cover"
           />
         ) : (
-          <div className="flex items-center justify-center h-80 bg-gray-200">
+          <div className="flex items-center justify-center h-80 bg-gray-200 ">
             No Image Selected
           </div>
         )}
