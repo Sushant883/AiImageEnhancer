@@ -6,7 +6,7 @@ import Loading from "./Loading.jsx";
 const ImagePreview = (props) => {
   return (
     // this is main div
-    <div className="mt-8 flex flex-wrap items-center justify-center gap-6 ml-8 mr-8 border w-[90%]">
+    <div className="mt-8 flex flex-wrap items-center justify-center gap-6 ml-8 mr-8 w-[90%]">
       {/* this di v is store the original image or local uplaoded image? */}
       <div className="bg-white shadow-lg rounded-xl overflow-hidden h-80 w-100">
         <h2 className="text-xl font-semibold text-center bg-gray-800 text-white py-2">
