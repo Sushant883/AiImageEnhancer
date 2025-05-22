@@ -20,7 +20,8 @@ const ImagePreview = (props) => {
             alt=""
             className="h-80 
             w-100
-            object-contain"
+           object-contain
+           "
           />
         ) : (
           <div className="flex items-center justify-center h-80 bg-gray-200">
@@ -42,7 +43,8 @@ const ImagePreview = (props) => {
             alt=""
             className=" h-80 w-100
             
-            object-contain"
+             object-contain
+            "
           />
         )}
 
