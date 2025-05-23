@@ -1,4 +1,5 @@
-const API_KEY = "wxcqlhypu3mp9bljf";
+// const API_KEY = "wxcqlhypu3mp9bljf"; // sushant api
+const API_KEY = "wxu4gvzrikn24ilfq"; // anmol api 
 const BASE_URL = "https://techhk.aoscdn.com/";
 const MAXIMUM_RETRIES = 20; // Maximum number of retries for polling
 import axios from "axios";
