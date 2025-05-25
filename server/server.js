@@ -10,6 +10,7 @@ const PORT = process.env.PORT || 5000;
 // Middleware
 app.use(cors());
 app.use(express.json());
+// app.use("/api/enhance",require("./routes/enhance")); // Importing the enhanced API routes
 
 // MongoDB connection
 mongoose
