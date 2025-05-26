@@ -11,11 +11,14 @@ import ApiDocs from "./FooterContent/ApiDocumentatino.jsx";
 import BlogPage from "./FooterContent/BlogPage.jsx";
 import HelpCenter from "./FooterContent/HelpCenter.jsx";
 import Community from "./FooterContent/Community.jsx";
+import CursorFollower from "./components/CursorFollower.jsx";
 // import "./App.css";
 
 const App = () => {
   // const [count, setCount] = useState(0)
   return (
+    <>
+    <CursorFollower />
     <div
       className="flex flex-col items-center
     min-h-screen bg-gray-100"
@@ -36,6 +39,7 @@ const App = () => {
 
       <Footer />
     </div>
+    </>
   );
 };
 
